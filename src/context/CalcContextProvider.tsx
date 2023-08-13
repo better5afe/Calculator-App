@@ -25,16 +25,7 @@ export const CalcContextProvider: React.FC<CalcContextProps> = ({
 			setError('');
 		}
 
-		if (btnValue === '.') {
-			if (calc === '' || operators.includes(calc.slice(-1))) {
-				setCalc('0.');
-				return;
-			}
-			const numbers = calc.split(/[-+*/]/);
-			if (numbers[numbers.length - 1].includes('.')) {
-				return;
-			}
-		}
+		
 
 		if (calc === '') {
 			if (
@@ -56,6 +47,17 @@ export const CalcContextProvider: React.FC<CalcContextProps> = ({
 				return previousState.slice(0, -1) + btnValue;
 			});
 			return;
+		}
+
+		if (btnValue === '.') {
+			if (calc === '' || operators.includes(calc.slice(-1))) {
+				setCalc('0.');
+				return;
+			}
+			const numbers = calc.split(/[-+*/]/);
+			if (numbers[numbers.length - 1].includes('.')) {
+				return;
+			}
 		}
 
 		if (calc.length > 31) {
