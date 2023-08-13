@@ -36,6 +36,10 @@ button {
 }
 
 @media (min-width: 768px) {
+	body {
+		margin: 0;
+	}
+
 	.calc-box {
 		width: 70vw;
 		height: 60vh;
