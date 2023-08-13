@@ -48,6 +48,10 @@ button {
 }
 
 @media (min-width: 992px) {
+	.body {
+		margin: 0;
+	}
+	
 	.calc-box {
 		width: 400px;
 	}
