@@ -14,8 +14,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
-	margin: 2em 0;
+	height: 100vh;
 	font-family: 'League Spartan', sans-serif;
 	font-size: 1.6rem;
 }
@@ -36,11 +35,6 @@ button {
 }
 
 @media (min-width: 768px) {
-	body {
-		height: 100vh;
-		margin: 0;
-	}
-
 	.calc-box {
 		width: 70vw;
 		height: 60vh;
@@ -48,10 +42,6 @@ button {
 }
 
 @media (min-width: 992px) {
-	.body {
-		margin: 0;
-	}
-	
 	.calc-box {
 		width: 400px;
 	}
