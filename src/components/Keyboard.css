@@ -1,0 +1,24 @@
+.keyboard-box {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	gap: 1.5rem;
+	height: 120vh;
+	width: 100%;
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 0.5rem;
+}
+
+button {
+	min-height: 30px;
+	border-radius: 0.5rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.equals {
+	grid-column: 3/5;
+}

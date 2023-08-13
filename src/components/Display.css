@@ -1,0 +1,21 @@
+.display-box {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	min-height: 7rem;
+	padding: 0.8em 0.5em;
+	margin-top: 0.5em;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.calc-display {
+	padding-top: .3em;
+}
+
+@media (min-width: 768px) {
+	.display-box {
+		height: 9rem;
+	}
+}

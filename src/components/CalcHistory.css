@@ -1,0 +1,69 @@
+.history-box {
+	position: fixed;
+	top: 0;
+	left: -200%;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	padding: 1.5em 2em;
+	transition: left 0.5s ease-in-out;
+}
+
+.show-history-box {
+	left: 0;
+}
+
+.close-history {
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.clear-history {
+	padding: 0.5em 0.8em;
+	margin-bottom: 1.5em;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.history-list {
+	list-style-type: none;
+}
+
+.history-entry {
+	padding: 0.8em;
+	width: 80vw;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.history-entry {
+		width: 50vw;
+	}
+}
+
+@media (min-width: 992px) {
+	.history-box {
+		width: 25%;
+	}
+
+	.history-entry {
+		width: 20vw;
+	}
+}
+
+@media (min-width: 1200px) {
+	.history-box {
+		width: 30%;
+	}
+
+	.history-entry {
+		font-size: 2rem;
+	}
+}

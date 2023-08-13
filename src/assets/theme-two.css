@@ -1,0 +1,94 @@
+:root {
+	--main-bg-two: hsl(0, 0%, 90%);
+	--secondary-bg-two: hsl(0, 5%, 81%);
+	--display-bg-two: hsl(0, 0%, 93%);
+	--key-cyan: hsl(185, 42%, 37%);
+	--key-cyan-hover: hsl(185, 41%, 46%);
+	--key-dark-cyan: hsl(185, 58%, 25%);
+	--key-orange: hsl(25, 98%, 40%);
+	--key-orange-hover: hsl(25, 82%, 51%);
+	--key-dark-orange: hsl(25, 99%, 27%);
+	--key-main-two: hsl(45, 7%, 89%);
+	--key-main-two-hover: hsl(40, 43%, 99%);
+	--key-shadow-two: hsl(35, 11%, 61%);
+	--text-dark-yellow: hsl(60, 10%, 19%);
+	--text-white: hsl(0, 0%, 100%);
+}
+
+.second-theme {
+	background-color: var(--main-bg-two);
+	color: var(--text-dark-yellow);
+}
+
+.second-theme .toggler-bg {
+	background-color: var(--secondary-bg-two);
+}
+
+.second-theme .toggler {
+	background-color: var(--key-orange);
+}
+
+.second-theme .toggler:hover {
+	background-color: var(--key-orange-hover);
+}
+
+.second-theme .display-box {
+	background-color: var(--display-bg-two);
+}
+
+.second-theme .keyboard-box {
+	background-color: var(--secondary-bg-two);
+}
+
+.second-theme .close-history,
+.second-theme .open-history {
+	color: var(--text-dark-yellow);
+}
+
+.second-theme .history-entry {
+	border-top: 1px solid var(--text-dark-yellow);
+}
+
+.second-theme .number,
+.second-theme .operator,
+.second-theme .clear-history {
+	background-color: var(--key-main-two);
+	color: var(--text-dark-yellow);
+	box-shadow: 0px 4px 0px 0px var(--key-shadow-two);
+}
+
+.second-theme .number:hover,
+.second-theme .operator:hover,
+.second-theme .clear-history:hover {
+	background-color: var(--key-main-two-hover);
+}
+
+.second-theme .delete,
+.second-theme .clear,
+.second-theme .equals {
+	color: var(--text-white);
+}
+
+.second-theme .delete,
+.second-theme .clear {
+	background-color: var(--key-cyan);
+	box-shadow: 0px 4px 0px 0px var(--key-dark-cyan);
+}
+
+.second-theme .delete:hover,
+.second-theme .clear:hover {
+	background-color: var(--key-cyan-hover);
+}
+
+.second-theme .equals {
+	background-color: var(--key-orange);
+	box-shadow: 0px 4px 0px 0px var(--key-dark-orange);
+}
+
+.second-theme .equals:hover {
+	background-color: var(--key-orange-hover);
+}
+
+.second-theme .history-box {
+	background-color: var(--display-bg-two);
+}

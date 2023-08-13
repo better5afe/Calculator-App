@@ -1,0 +1,90 @@
+:root {
+	--main-bg-three: hsl(268, 75%, 9%);
+	--secondary-bg-three: hsl(268, 71%, 12%);
+	--key-violet: hsl(281, 89%, 26%);
+	--key-violet-hover: hsl(281, 89%, 33%);
+	--key-magenta: hsl(285, 91%, 52%);
+	--key-pure-cyan: hsl(176, 100%, 44%);
+	--key-pure-cyan-hover: hsl(176, 93%, 52%);
+	--key-soft-cyan: hsl(177, 92%, 70%);
+	--key-main-three: hsl(268, 47%, 21%);
+	--key-main-three-hover: hsl(268, 47%, 30%);
+	--key-shadow-three: hsl(290, 70%, 36%);
+	--text-light-yellow: hsl(52, 100%, 62%);
+	--text-dark-blue: hsl(198, 20%, 13%);
+	--text-white: hsl(0, 0%, 100%);
+}
+
+.third-theme {
+	background-color: var(--main-bg-three);
+	color: var(--text-light-yellow);
+}
+
+.third-theme .toggler-bg {
+	background-color: var(--secondary-bg-three);
+}
+
+.third-theme .toggler {
+	background-color: var(--key-pure-cyan);
+}
+
+.third-theme .toggler:hover {
+	background-color: var(--key-pure-cyan-hover);
+}
+
+.third-theme .display-box {
+	background-color: var(--secondary-bg-three);
+}
+
+.third-theme .keyboard-box {
+	background-color: var(--secondary-bg-three);
+}
+
+.third-theme .close-history,
+.third-theme .open-history {
+	color: var(--text-light-yellow);
+}
+
+.third-theme .history-entry {
+	border-top: 1px solid var(--text-light-yellow);
+}
+
+.third-theme .number,
+.third-theme .operator,
+.third-theme .clear-history {
+	background-color: var(--key-main-three);
+	color: var(--text-light-yellow);
+	box-shadow: 0px 4px 0px 0px var(--key-shadow-three);
+}
+
+.third-theme .number:hover,
+.third-theme .operator:hover,
+.third-theme .clear-history:hover {
+	background-color: var(--key-main-three-hover);
+}
+
+.third-theme .delete,
+.third-theme .clear {
+	background-color: var(--key-violet);
+	color: var(--text-white);
+	box-shadow: 0px 4px 0px 0px var(--key-magenta);
+}
+
+.third-theme .delete:hover,
+.third-theme .clear:hover {
+	background-color: var(--key-violet-hover);
+}
+
+.third-theme .equals {
+	background-color: var(--key-pure-cyan);
+	color: var(--text-dark-blue);
+	box-shadow: 0px 4px 0px 0px var(--key-soft-cyan);
+}
+
+.third-theme .equals:hover {
+	background-color: var(--key-pure-cyan-hover);
+}
+
+.third-theme .history-box {
+	background-color: var(--secondary-bg-three);
+}
